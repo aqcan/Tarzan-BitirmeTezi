@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CoinSystem : MonoBehaviour
 {
@@ -21,6 +22,13 @@ public class CoinSystem : MonoBehaviour
             Destroy(gameObject);
 
             Instantiate(effect, transform.position, Quaternion.identity);
+        }
+
+        if (player.coin == 20)
+        {
+
+            SceneManager.LoadScene(3);
+
         }
     }
 }

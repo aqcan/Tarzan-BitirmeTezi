@@ -3,7 +3,10 @@ guid: 96427048ed74a4c428253d556f28b68a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - groundCheck: {instanceID: 0}
+  - text: {instanceID: 0}
+  - gameOverScreen: {fileID: 1582189330484809806, guid: e01cc2be22a9f854781675ed69029fd2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

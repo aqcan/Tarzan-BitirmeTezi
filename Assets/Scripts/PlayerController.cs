@@ -28,11 +28,13 @@ public class PlayerController : MonoBehaviour
 
     public TextMeshProUGUI text;
 
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         facingRight = true;
+
     }
 
     private void Update()
@@ -89,12 +91,12 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Spike")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
 
         if (collision.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
 
 
